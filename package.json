@@ -4,6 +4,9 @@
   "description": "Make a 'require' object for a given path, that bases all require() and require.resolve() calls on that path",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
   "homepage": "https://github.com/eush77/require-for",
   "repository": {
     "type": "git",
@@ -26,7 +29,9 @@
   ],
   "dependencies": {
     "object.assign": "^1.1.1",
-    "require-from": "^0.10.0"
+    "resolve-from": "^1.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "tape": "^3.5.0"
+  }
 }

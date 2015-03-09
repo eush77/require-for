@@ -1,19 +1,19 @@
 'use strict';
 
-var requireFrom = require('require-from'),
+var resolveFrom = require('resolve-from'),
     assign = Object.assign || require('object.assign');
 
 
 module.exports = function (fromDir, requirefn) {
-  requirefn = requirefn || global.require;
+  requirefn = requirefn || require;
 
-  var require = function require(moduleId) {
-    return requirefn(require.resolve(module));
+  var req = function require(moduleId) {
+    return requirefn(require.resolve(moduleId));
   };
 
-  assign(require, requirefn, {
+  assign(req, requirefn, {
     resolve: resolveFrom.bind(null, fromDir)
   });
 
-  return require;
+  return req;
 };
