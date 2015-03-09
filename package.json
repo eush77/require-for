@@ -24,6 +24,9 @@
     "from",
     "like"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "object.assign": "^1.1.1",
+    "require-from": "^0.10.0"
+  },
   "devDependencies": {}
 }
