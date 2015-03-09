@@ -2,7 +2,7 @@
 
 # require-for
 
-[![Dependency Status][david-badge]][david]
+[![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
 
 Make a `require` object for a given path, that bases all `require()` and `require.resolve()` calls on that path.
 
@@ -10,6 +10,8 @@ Much like [resolve-from](http://npm.im/resolve-from), and in fact `requireFor(di
 
 Such object can be passed to VM running some script enabling that script to `require` other modules, as in [nodei](http://npm.im/nodei).
 
+[travis]: https://travis-ci.org/eush77/require-for
+[travis-badge]: https://travis-ci.org/eush77/require-for.svg
 [david]: https://david-dm.org/eush77/require-for
 [david-badge]: https://david-dm.org/eush77/require-for.png
 
