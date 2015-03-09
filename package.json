@@ -1,6 +1,6 @@
 {
   "name": "require-for",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Make a 'require' object for a given path, that bases all require() and require.resolve() calls on that path",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
@@ -25,7 +25,8 @@
     "path",
     "module",
     "from",
-    "like"
+    "vm",
+    "global"
   ],
   "dependencies": {
     "object.assign": "^1.1.1",
